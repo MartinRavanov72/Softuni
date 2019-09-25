@@ -1,0 +1,106 @@
+@media (max-width: 1024px) and (min-width: 769px) {
+    .site-main {
+        margin: 0;
+    }
+
+    .site-logo img {
+        width: 5.75rem;
+        height: auto;
+    }
+
+    .site-logo {
+        font-size: inherit;
+    }
+
+    body>main>section.site-logos>div {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .entry-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .entry-title {
+        font-size: 2rem;
+    }
+
+    .entry-description {
+        font-size: 1rem;
+    }
+
+    .site-information-image {
+        padding: 1rem;
+    }
+
+    .site-information-image {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    body>main>section.entry-content>div.site-form>section.site-information-image {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .site-main {
+        margin: 0;
+    }
+
+    .site-information-text {
+        flex: 0 0 100%;
+    }
+
+    .site-information-image {
+        flex: 0 0 0%;
+    }
+
+    .entry-description {
+        width: 100%;
+    }
+
+    .site-information-text {
+        text-align: center;
+    }
+
+    .site-form label {
+        display: block;
+    }
+
+    .site-form form>p {
+        display: block;
+    }
+
+    .site-form input {
+        display: inline-block;
+        width: 40vw;
+    }
+
+    .site-form label {
+        padding-right: 0;
+    }
+
+    .site-form button {
+        margin: 0 auto;
+    }
+
+    .site-form {
+        margin-top: 0;
+    }
+
+    .site-posts {
+        display: block;
+    }
+
+    .site-post {
+        width: 70vw;
+        margin: 1.5rem auto;
+    }
+
+    .entry-header {
+        padding: 2rem 0;
+    }
+
+}

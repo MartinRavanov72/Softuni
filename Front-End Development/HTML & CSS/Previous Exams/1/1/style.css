@@ -1,0 +1,41 @@
+@import url("typography.css");
+
+section {
+  width: 70vw;
+  background: linear-gradient(to bottom, rgba(13, 13, 121, 0.6), rgba(13, 13, 121, 0.6)), url("images/image.jpg") center no-repeat;
+  background-size: cover;
+  margin: 6rem auto;
+  color: white;
+  text-shadow: 0 1px 1px #AAAAAA;
+  text-align: center;
+  position: relative;
+}
+
+.ul-holder {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 6rem 0;
+}
+
+.ul-holder ul li:nth-child(2) {
+  font-weight: bold;
+}
+
+i {
+  color: darkorange;
+  text-shadow: none;
+  padding-bottom: 1rem;
+}
+
+.fa-times {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.2rem 0.6rem 0 0;
+
+}
+
+li {
+  list-style: none;
+}

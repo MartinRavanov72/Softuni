@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Car Tube</title>
+    <link rel="stylesheet" href="style/site.css">
+    <link rel="stylesheet" href="style/welcome.css">
+    <link rel="stylesheet" href="style/car-listings.css">
+    <link rel="stylesheet" href="style/login-register.css">
+    <link rel="stylesheet" href="style/my-listings.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/navigation.css">
+    <link rel="stylesheet" href="style/notifications.css">
+    <link rel="stylesheet" href="style/listing-details.css">
+</head>
+
+<body>
+    <nav>
+        <a class="active" href="#/home">Home</a>
+        <a id="all-listings" href="#/cars/all">All Listings</a>
+        <a id="my-listings" href="#/cars/my">My Listings</a>
+        <a id="create-listing" href="#/cars/create">Create Listing</a>
+        <div id="profile">
+            <a>Welcome username</a>
+            <a href="#/logout">Logout</a>
+        </div>
+    </nav>
+
+    <div class="footer">
+        <p>Created by MarikMayhem</p>
+    </div>
+    <div id="container"></div>
+
+    <div id="notifications">
+        <div id="loadingBox" class="notification">
+            <span>Loading …</span>
+        </div>
+        <div id="infoBox" class="notification">
+            <span>Info</span>
+        </div>
+        <div id="errorBox" class="notification">
+            <span>Error</span>
+        </div>
+    </div>
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/handlebars-v4.0.12.min.js"></script>
+    <script src="lib/sammy.min.js"></script>
+    <script src="lib/sammy.handlebars.min.js"></script>
+    <script src="helpers/storage.js"></script>
+    <script src="helpers/notifications.js"></script>
+    <script src="helpers/requester.js"></script>
+    <script src="models/userModel.js"></script>
+    <script src="models/carModel.js"></script>
+    <script src="controllers/home.js"></script>
+    <script src="controllers/user.js"></script>
+    <script src="controllers/car.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

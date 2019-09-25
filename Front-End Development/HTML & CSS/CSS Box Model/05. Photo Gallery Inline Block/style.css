@@ -1,0 +1,22 @@
+@import url("typography.css");
+
+body {
+    background: rgba(255, 204, 255, 40%);
+    max-width: 80rem;
+}
+
+img {
+    display: block;
+    max-height: 30rem;
+    width: auto;
+    margin: 1rem;
+
+}
+
+ul li {
+    border-width: 0.4rem;
+    border-color: black;
+    border-style: solid;
+    display: inline-block;
+    margin: 2rem;
+}

@@ -1,0 +1,44 @@
+@import url("typography.css");
+
+body {
+  padding: 2rem;
+  max-width: 70vw;
+  margin: auto;
+}
+
+.input-wrapper {
+  display: flex;
+  border: 2px solid #CCC;
+  border-radius: 0.3em;
+}
+
+i {
+  padding-top: 0.2em;
+  margin: 0 0.3em;
+}
+
+p {
+  margin: 0.1em 0.5em;
+}
+
+legend {
+  border: 2px solid #AAA;
+  border-radius: 0.3em;
+}
+
+fieldset,
+legend {
+  background: rgb(251, 251, 251);
+}
+
+input {
+  font: inherit;
+  border: none;
+  outline: none;
+  flex-grow: 1;
+}
+
+.input-wrapper:focus-within {
+  border: 2px solid rgb(47, 141, 3);
+  color: rgb(47, 141, 3);
+}

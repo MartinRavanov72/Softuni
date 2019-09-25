@@ -1,0 +1,64 @@
+<div id="register">
+    <form id="registerForm" action="#/register" method="POST">
+        <div class="container">
+            <h1>Register</h1>
+            <p id="details">Please fill in this form to create an account.</p>
+            <hr id="login-register-hr">
+
+            <p id="username">Username</p>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <p>Password</p>
+            <input type="password" placeholder="Enter Password" name="password" required>
+
+            <p>Repeat Password</p>
+            <input type="password" placeholder="Repeat Password" name="repeatPass" required>
+
+            <p>Email</p>
+            <input type="email" placeholder="Enter Email" name="email" required>
+
+            <p>Avatar Url</p>
+            <input type="text" placeholder="Enter AvatarUrl" name="avatarUrl" required>
+            <hr>
+
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+        <div class="container signin">
+            <p>Already have an account?
+                <a href="#/login">Sign in</a>.</p>
+        </div>
+    </form>
+</div>
+
+
+<script>
+    $(function () {
+        $('#registerForm').on('submit', function (ev) {
+            let isValid = true;
+            if ($("input[name='username']").val().trim().length < 3) {
+                isValid = false;
+                showError('Username should be at least 3 symbols long.');
+            }
+            else if (!(/^[A-Za-z]+$/g.exec($("input[name='username']").val().trim()))) {
+                isValid = false;
+                showError('Username should consist only of English letters.');
+            }
+            else if ($("input[name='password']").val().trim().length < 6) {
+                isValid = false;
+                showError('Password should be at least 6 symbols long.');
+            }
+            else if (!(/^[A-Za-z0-9]+$/g.exec($("input[name='password']").val().trim()))) {
+                isValid = false;
+                showError('Password should consist only of English letters and digits.');
+            }
+            else if ($("input[name='password']").val().trim() !== $("input[name='repeatPass']").val().trim()) {
+                isValid = false;
+                showError('Both passwords must match.');
+            }
+            if (!isValid) {
+                ev.preventDefault();
+                ev.stopPropagation();
+            }
+        });
+    });
+</script>

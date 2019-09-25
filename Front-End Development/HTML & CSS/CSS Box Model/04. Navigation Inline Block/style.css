@@ -1,0 +1,31 @@
+@import url("typography.css");
+
+/* body {
+    background: rgb(238, 238, 238);
+    color: rgb(51, 51, 51);
+} */
+
+nav li {
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+
+article {
+    padding: 2rem;
+    max-width: 80rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem 0;
+}

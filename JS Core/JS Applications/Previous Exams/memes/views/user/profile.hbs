@@ -1,0 +1,26 @@
+<div class="user-profile">
+    <img id="user-avatar-url" src="{{item.avatarUrl}}" alt="user-profile">
+    <h1>{{item.username}}</h1>
+    <h2>{{item.email}}</h2>
+    {{#if item.myProfile}}
+    <a id="deleteUserButton" href="#/users/profile/delete?id={{item._id}}">DELETE USER!</a>
+    {{/if}}
+    <p id="user-listings-title">User Memes
+    </p>
+    <div class="user-meme-listings">
+        {{#each item.memes}}
+        <div class="user-meme">
+            <a href="#/memes/details?id={{_id}}" class="user-meme-title">{{title}}</a>
+            <a href="#/memes/details?id={{_id}}"> <img class="userProfileImage" src="{{imageUrl}}"></a>
+            <div class="user-memes-buttons">
+                {{#if mine}}
+                <a href="#/memes/edit?id={{_id}}" class="user-meme-btn">Edit</a>
+                <a href="#/memes/delete?id={{_id}}" class="user-meme-btn">Delete</a>
+                {{/if}}
+            </div>
+        </div>
+        {{else}}
+        <p class="no-memes">No memes in database.</p>
+        {{/each}}
+    </div>
+</div>

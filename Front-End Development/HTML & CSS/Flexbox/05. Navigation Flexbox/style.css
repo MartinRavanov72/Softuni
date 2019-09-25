@@ -1,0 +1,54 @@
+@import url("typography.css");
+
+header {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+}
+
+nav a {
+  color: rgb(0, 153, 0);
+}
+
+/* .container,
+section {
+  display: flex;
+  text-align: center;
+}
+
+.week {
+  align-items: center;
+  flex-flow: wrap;
+}
+
+.container {
+  max-width: 65vw;
+}
+
+span {
+  border: 1px solid black;
+}
+
+.workweek,
+.weekend {
+  flex: 1 1 100%;
+}
+
+.days {
+  flex: 1 1 20%;
+}
+
+.notes {
+  flex-direction: column;
+}
+
+.notes span {
+  flex: 1 1 100%;
+} */

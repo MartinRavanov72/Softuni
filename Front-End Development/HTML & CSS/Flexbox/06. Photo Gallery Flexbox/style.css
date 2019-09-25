@@ -1,0 +1,21 @@
+@import url("typography.css");
+
+body,
+ul,
+li {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  flex: 0 0 33%;
+
+}
+
+img {
+  height: auto;
+  border: 3px solid black;
+  padding: 1rem;
+}

@@ -1,0 +1,21 @@
+{{#if item.mine}}
+<section class="detailsMyPet">
+    <h3>{{item.name}}</h3>
+    <p>Pet counter: <i class="fas fa-heart"></i> {{item.likes}}</p>
+    <p class="img"><img src="{{item.imageURL}}"></p>
+    <form id="editForm" action="#/pets/edit" method="POST">
+        <input type="hidden" name="petId" value="{{item._id}}" />
+        <textarea type="text" name="description">{{item.description}}</textarea>
+        <button class="button"> Save</button>
+    </form>
+</section>
+{{else}}
+<section class="detailsOtherPet">
+    <h3>{{item.name}}</h3>
+    <p>Pet counter: {{item.likes}} <a href="#/pets/pet?id={{item._id}}"><button class="button"><i class="fas fa-heart"></i>
+                Pet</button></a>
+    </p>
+    <p class="img"><img src="{{item.imageURL}}"></p>
+    <p class="description">{{item.description}}</p>
+</section>
+{{/if}}

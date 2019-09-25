@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: PT Sans, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+p {
+  padding-bottom: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, serif;
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+
+/* h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+h3 {
+  font-size: 1.9em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+h6 {
+  font-size: 1.2em;
+} */

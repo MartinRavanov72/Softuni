@@ -1,0 +1,19 @@
+@import url("typography.css");
+
+.container,
+section {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 65vw;
+}
+
+span {
+  border: 1px solid black;
+}
+
+.notes {
+  flex-direction: column;
+}

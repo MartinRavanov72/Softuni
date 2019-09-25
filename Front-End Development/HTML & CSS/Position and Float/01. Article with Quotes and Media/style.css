@@ -1,0 +1,42 @@
+@import url("typography.css");
+
+.site-title {
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+body {
+    max-width: 80rem;
+    padding: 2rem;
+}
+
+blockquote {
+    max-width: 30rem;
+    border-left: 3px solid rgb(100, 100, 100);
+    color: rgb(100, 100, 100);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    float: right;
+}
+
+.author-name {
+    text-align: right;
+}
+
+img {
+    border: 2px solid black;
+    padding: 0.5rem;
+}
+
+#pic-float-left {
+    float: left;
+}
+
+#pic-float-right {
+    float: right;
+}
+
+hr {
+    margin-bottom: 2rem;
+}

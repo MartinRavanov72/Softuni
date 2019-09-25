@@ -1,0 +1,45 @@
+@import url("typography.css");
+
+body {
+  background: rgb(238, 238, 238);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}
+
+.card {
+  background: rgb(255, 255, 255);
+  border-radius: 0.2em;
+  box-shadow: 10px 10px 20px grey;
+
+}
+
+section {
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+h3,
+p,
+a {
+  margin: 0.5em 2em;
+}
+
+img {
+  border-top-left-radius: 0.2em;
+  border-top-right-radius: 0.2em;
+}
+
+a {
+  margin-left: auto;
+  background: rgb(0, 153, 0);
+  padding: 0.7em;
+  text-decoration: none;
+  color: white;
+  border-radius: 0.3em;
+}

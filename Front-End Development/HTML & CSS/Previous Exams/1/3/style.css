@@ -1,0 +1,176 @@
+@import url("typography.css");
+
+body {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.site-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem 2rem 1rem 1rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  width: 15vw;
+  box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.75);
+}
+
+header {
+  position: relative;
+  background: url("image/image.jpg") center no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  height: 140vh;
+}
+
+.short-desc {
+  width: 20vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 1rem 20rem 0;
+  box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.75);
+  background-image: linear-gradient(to right, gray, lightgray);
+  text-align: right;
+  color: white;
+  text-shadow: 0 2px 2px #555;
+  padding: 0 1rem;
+}
+
+.short-desc p:first-child {
+  font-size: 4rem;
+  color: gray;
+  padding-bottom: 0em;
+
+}
+
+h1 {
+  margin: 0;
+}
+
+.site-title h1:after {
+  display: block;
+  content: '';
+  width: 15vw;
+  height: 3px;
+  background: white;
+  margin-top: 1rem;
+}
+
+
+
+
+main {
+  display: flex;
+}
+
+.left-sect {
+  background: #EEE;
+}
+
+.services {
+  padding: 4rem 4rem 0 4rem;
+}
+
+.services i {
+  padding-right: 1rem;
+}
+
+.services h3 {
+  padding-bottom: 1rem;
+}
+
+.services ul li span {
+  font-weight: bold;
+}
+
+.contacts {
+  padding: 3rem 4rem 0 4rem;
+}
+
+.left-sect {
+  position: relative;
+}
+
+.contacts h3:after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: black;
+  margin-top: 35rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contacts ul li span {
+  font-weight: bold;
+}
+
+.contacts ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+
+.contacts ul li {
+  padding-right: 1rem;
+}
+
+.contacts input {
+  outline: none;
+  background: #AAA;
+  width: 40%;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: white;
+  background: rgb(0, 87, 22);
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+::placeholder {
+  color: white;
+}
+
+
+
+
+.right-sect {
+  width: 75%;
+  background: #BBB;
+}
+
+.right-sect ul {
+  padding: 1rem 0 3.7rem 1rem;
+}
+
+.right-sect ul:nth-child(4) {
+  padding: 1rem 0 1rem 1rem;
+}
+
+.right-sect ul li:first-child {
+  color: white;
+  font-size: 3.4rem;
+  font-weight: 300;
+}
+
+.right-sect ul li:nth-child(2) {
+  text-transform: uppercase;
+}
+
+
+
+
+li {
+  list-style: none;
+}

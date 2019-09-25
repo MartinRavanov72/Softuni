@@ -1,0 +1,90 @@
+@import url("typography.css");
+@import url("style.css");
+
+nav {
+    flex-grow: 1;
+    flex-shrink: 1;
+    background: white;
+}
+
+#nav-icons {
+    display: none;
+}
+
+#toggle-nav {
+    display: none;
+}
+
+@media(max-width:1024px) {
+    #menu li {
+        display: none;
+    }
+
+    i.fa-times {
+        display: none;
+    }
+
+    i.fa-bars {
+        display: block;
+    }
+
+    #toggle-nav:checked+header nav #menu {
+        display: block;
+    }
+
+
+    #toggle-nav:checked+header nav #menu li {
+        display: block;
+        margin: auto;
+    }
+
+    #toggle-nav:checked+header nav #nav-icons i.fa-times {
+        display: block;
+    }
+
+    #toggle-nav:checked+header nav #nav-icons i.fa-bars {
+        display: none;
+    }
+
+    #nav-icons {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+h1 {
+    flex: 1 1 800px;
+    min-width: 200px;
+
+}
+
+nav {
+    min-width: 200px;
+    ;
+}
+
+#nav-icons i {
+    color: #333;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu li {
+    flex: 1 1 60px;
+    max-width: 150px;
+    list-style: none;
+    border: 1px solid #333;
+    background: #333;
+    border-radius: 0.3em;
+    padding: 1em;
+    text-align: center;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+}

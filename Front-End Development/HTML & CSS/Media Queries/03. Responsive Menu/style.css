@@ -1,0 +1,91 @@
+@import url("typography.css");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #DDF;
+  border-bottom: 1px solid #333;
+  padding-bottom: 1em;
+}
+
+nav {
+  flex-grow: 1;
+  max-width: 70vw;
+  background: white;
+}
+
+label {
+  display: none;
+}
+
+input {
+  display: none;
+}
+
+
+
+@media(max-width:1024px) {
+  ul li {
+    display: none;
+  }
+
+  i.fa-times {
+    display: none;
+  }
+
+  input:checked+nav ul {
+    display: block;
+  }
+
+
+  input:checked+nav ul li {
+    display: block;
+    max-width: 70vw;
+  }
+
+  input:checked+nav label i.fa-times {
+    display: block;
+  }
+
+  input:checked+nav label i.fa-bars {
+    display: none;
+  }
+
+  label {
+    display: block;
+    text-align: center;
+  }
+}
+
+
+h1 {
+  flex: 1 1 1000px;
+  text-align: center;
+}
+
+i {
+  color: #333;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  flex: 1 1 60px;
+  max-width: 150px;
+  list-style: none;
+  border: 1px solid #333;
+  background: #333;
+  border-radius: 0.3em;
+  padding: 1em;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,40 @@
+@import url("typography.css");
+
+ul {
+  display: inline-block;
+}
+
+li {
+  float: left;
+  margin: 1rem 2rem 0.5rem 0;
+  padding-left: 0.5rem;
+  list-style: none;
+}
+
+a {
+  border-radius: 50%;
+}
+
+i {
+  color: black;
+}
+
+.fa-facebook:hover {
+  color: blue;
+}
+
+.fa-twitter:hover {
+  color: cyan;
+}
+
+.fa-google-plus:hover {
+  color: orange;
+}
+
+.fa-linkedin:hover {
+  color: lightseagreen;
+}
+
+.fa-instagram:hover {
+  color: gray;
+}

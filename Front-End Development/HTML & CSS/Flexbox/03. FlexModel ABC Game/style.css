@@ -1,0 +1,60 @@
+@import url("typography.css");
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 15vw;
+  height: 35rem;
+}
+
+span {
+  border: 1px solid black;
+}
+
+.container:nth-child(1) {
+  order: 1;
+}
+
+.container:nth-child(1) {
+  order: 1;
+}
+
+.container:nth-child(1) {
+  order: 1;
+}
+
+.container:nth-child(1) {
+  order: 1;
+}
+
+.container:nth-child(1) {
+  order: 1;
+}
+
+.container:nth-child(1) {
+  order: 1;
+}
+
+.container:nth-child(1) {
+  order: 1;
+}
+
+.container:nth-child(1) {
+  order: 1;
+}
+
+.container:nth-child(1) {
+  order: 1;
+}
+
+.container:nth-child(1) {
+  order: 1;
+}
+
+.container:nth-child(1) {
+  order: 1;
+}
+
+.container:nth-child(1) {
+  order: 1;
+}

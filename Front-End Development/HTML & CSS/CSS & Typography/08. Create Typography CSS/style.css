@@ -1,0 +1,28 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* p {
+    padding-bottom: 1em;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgia, serif;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 3px solid;
+    border-left-color: rgb(221, 221, 221);
+}
+
+blockquote footer {
+    text-align: right;
+}

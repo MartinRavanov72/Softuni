@@ -1,0 +1,37 @@
+@import url("typography.css");
+
+@media(max-width:600px) {
+  section.mq-width:before {
+    content: "Viewport width is smaller than than 600px";
+  }
+}
+
+@media(min-width:600px) {
+  section.mq-width:before {
+    content: "Viewport width is larger than than 600px";
+  }
+}
+
+@media(max-height:600px) {
+  section.mq-height:before {
+    content: "Viewport height is smaller than than 600px";
+  }
+}
+
+@media(min-height:600px) {
+  section.mq-height:before {
+    content: "Viewport height is larger than than 600px";
+  }
+}
+
+@media(max-aspect-ratio:8/5) {
+  section.mq-ar:before {
+    content: "Aspect Ratio is smaller than than 8/5";
+  }
+}
+
+@media(min-aspect-ratio:8/5) {
+  section.mq-ar:before {
+    content: "Aspect Ratio is larger than than 8/5";
+  }
+}
