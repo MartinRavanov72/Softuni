@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif&display=swap");
+@import url("../css/variables.css");
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before *:after {
+    box-sizing: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: var(--font-ptsans), sans-serif;
+    font-size: var(--sizing-fs-base);
+    line-height: 1.5;
+}
+
+@media (min-width: 600px) {
+    html {
+        font-size: var(--sizing-fs-tablet);
+    }
+}
+
+@media (min-width: 1260px) {
+    html {
+        font-size: var(--sizing-fs-laptop);
+    }
+}
+
+@media (min-width: 1420px) {
+    html {
+        font-size: var(--sizing-fs-desktop);
+    }
+}
+
+@media (min-width: 1660px) {
+    html {
+        font-size: var(--sizing-fs-huge);
+    }
+}
+
+p {
+    padding-bottom: calc(var(--sizing-ws-base) * (2 / 3));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-ptserif), serif;
+    line-height: 1.1;
+    margin: 0 0 calc(var(--sizing-ws-base) / 3) 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 1.9em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+
+h5 {
+    font-size: 1.4em;
+}
+
+h6 {
+    font-size: 1.2em;
+}
+
+body {
+    width: 80vw;
+    margin: 2rem auto;
+}
+
+header {
+    text-align: center;
+}

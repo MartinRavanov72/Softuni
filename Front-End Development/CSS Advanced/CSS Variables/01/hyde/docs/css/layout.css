@@ -1,0 +1,79 @@
+@import url("../css/variables.css");
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before *:after {
+    box-sizing: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Ubuntu, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+p {
+    padding-bottom: calc(var(--sizing-ws-base) * (2 / 3));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Abril Fatface, serif;
+    line-height: 1.1;
+    margin: 0 0 calc(var(--sizing-ws-base) / 3) 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: var(--sizing-h1);
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: var(--sizing-h3);
+}
+
+h4 {
+    font-size: 1.6em;
+}
+
+h5 {
+    font-size: 1.4em;
+}
+
+h6 {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: var(--sizing-p);
+}
+
+body {
+    width: 40vw;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+h3 {
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;
+}

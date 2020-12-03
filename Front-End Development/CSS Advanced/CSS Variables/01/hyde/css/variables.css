@@ -1,0 +1,13 @@
+:root {
+    --sizing-ws-base: 1.5em;
+    --sizing-fs-base: 12px;
+
+    --sizing-fs-tablet: 14px;
+    --sizing-fs-laptop: 16px;
+    --sizing-fs-desktop: 18px;
+    --sizing-fs-huge: 20px;
+
+    --sizing-h1: 30px;
+    --sizing-h3: 20px;
+    --sizing-p: 16px;
+}

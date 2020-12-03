@@ -1,0 +1,33 @@
+@media(max-width:768px) {
+    .gallery {
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+
+    .gallery>* {
+        width: 100%;
+    }
+
+    .wrapper.style2 {
+        background: #1e1f23;
+        padding: 1rem;
+    }
+
+    .spotlight {
+        display: block;
+    }
+
+    .spotlight>* {
+        width: 100%;
+    }
+
+    .spotlight .inner {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .inner p {
+        color: #777;
+    }
+}

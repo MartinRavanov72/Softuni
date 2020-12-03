@@ -1,0 +1,168 @@
+@import url("typography.css");
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#nav_bar {
+  display: flex;
+  justify-content: space-evenly;
+  background: #DDD;
+}
+
+#nav_bar ul {
+  display: flex;
+}
+
+#nav_bar a {
+  color: #444;
+  display: inline-block;
+  padding: 2rem 1rem;
+}
+
+#nav_bar li:nth-child(1) a,
+#nav_bar li:nth-child(1) i {
+  color: red;
+}
+
+#nav_bar li:nth-child(1) i {
+  position: relative;
+  top: 0;
+  right: 1em;
+}
+
+#header_bg {
+  background: url("img/residential-banner-2.jpg") center no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 4rem 30rem 6rem 30rem;
+}
+
+
+
+
+
+#services {
+  padding: 2rem 0 0 0;
+}
+
+main section h4 {
+  text-align: center;
+}
+
+#services_list {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 70%;
+  color: #444;
+}
+
+#services_list li {
+  width: 30%;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+#services h2 {
+  display: flex;
+  padding-left: 5.2rem;
+}
+
+#services h2:before,
+#services h2:after {
+
+  height: 2px;
+  width: 20px;
+  content: '';
+  background: #444;
+  margin: 1rem;
+  display: block;
+}
+
+
+
+
+#services_pics {
+  background: #CCC;
+  display: flex;
+  justify-content: center;
+}
+
+#services_pics img {
+  padding: 4rem 0.3rem;
+}
+
+
+
+
+footer {
+  background: #000;
+  color: #999;
+}
+
+#upper_footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 0.7em;
+}
+
+#footer_links {
+  width: 33%;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 3rem;
+
+}
+
+#footer_links li {
+  width: 13%;
+  padding: 0.3rem 2rem;
+}
+
+#footer_links a {
+  color: #999;
+}
+
+#footer_news {
+  width: 10%;
+  padding-right: 3rem;
+}
+
+#footer_subscribe {
+  width: 30%;
+}
+
+#footer_circles {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+#footer_subscribe a {
+  display: inline-block;
+  color: white;
+  padding: 0.6rem 0.2rem;
+  background: red;
+  border: 1px solid red;
+  border-radius: 0.3rem;
+}
+
+#footer_subscribe input {
+  padding: 0.6rem 0.2rem;
+}
+
+#last {
+  text-align: center;
+  margin: 0 auto;
+}

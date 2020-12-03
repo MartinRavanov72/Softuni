@@ -1,0 +1,10 @@
+@import url("../css/typography.css");
+
+body {
+    width: 80vw;
+    margin: 2rem auto;
+}
+
+ul {
+    padding-left: 3rem;
+}

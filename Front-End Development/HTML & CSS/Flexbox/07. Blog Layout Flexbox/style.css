@@ -5,6 +5,11 @@
   flex-wrap: wrap;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 body {
   background: rgb(238, 238, 238);
   padding-left: 2rem;
