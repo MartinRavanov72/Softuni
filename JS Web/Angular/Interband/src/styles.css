@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('./assets/reset.css');
+@import url('./assets/typography.css');
+@import url('./assets/responsive.css');
+
+body {
+  min-height: 100vh;
+  padding-bottom: 4rem;
+  position: relative;
+  background-color: rgb(240, 255, 244);
+  text-align: center;
+}

@@ -1,0 +1,90 @@
+.profile-page {
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  color: #333;
+}
+
+.edit-button{
+    border: 0;
+    width: 10rem;
+    padding: 0.5rem 3.5rem;
+    border-radius: 2rem;
+    color: white;
+    margin: 0.5rem 0;
+    background-color: rgb(64, 152, 202);
+}
+
+.green-button{
+    border: 0;
+    width: 10rem;
+    padding: 0.5rem 3.5rem;
+    border-radius: 2rem;
+    color: white;
+    margin: 0.5rem 0;
+    background-color: rgb(25, 107, 0);
+}
+
+.red-button{ 
+    border: 0;
+    width: 10rem;
+    padding: 0.5rem 3.5rem;
+    border-radius: 2rem;
+    color: white;
+    margin: 0.5rem 0;
+    background: rgb(119, 0, 0);
+}
+
+button:disabled,
+button[disabled] {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+img {
+  height: 15rem;
+  width: auto;
+}
+
+.item {
+  margin-bottom: 1rem;
+}
+
+#edit-form{
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    color: #333;
+}  
+
+#edit-form label{
+    position: relative;
+    top: 5px;
+    padding-right: 0.5rem;
+    min-width: 6rem;
+}
+
+h2 {
+  padding-bottom: 2rem;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(14, 83, 122);
+}
+
+input {
+  border: 1px solid rgb(64, 152, 202);
+  border-radius: 0.3rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  padding: 0.3rem 0 0.3rem 0.5rem;
+  background: rgb(240, 255, 244);
+}
+
+.flex{
+    display: flex;
+}
+
+.error{
+    color: red;
+}

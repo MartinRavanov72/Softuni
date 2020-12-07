@@ -1,0 +1,79 @@
+<div class="register-page">
+  <form [formGroup]="form" (ngSubmit)="submitHandler()">
+    <h2>Register</h2>
+
+    <!-- email -->
+    <p *ngIf="form.get('email').touched && form.get('email').errors?.required" class="error">
+      Email is required!
+    </p>
+    <p *ngIf="form.get('email').touched && form.get('email').errors?.emailValidator" class="error">
+      Email is not valid!
+    </p>
+    <p class="field">
+      <label for="email"><span><i class="fas fa-envelope"></i></span></label>
+      <input [class.input-error]="form.get('email').touched && !!form.get('email').errors" type="email" name="email"
+        id="email" placeholder="Your email" formControlName="email">
+    </p>
+    
+    <!-- username -->
+    <p *ngIf="form.get('name').touched && form.get('name').errors?.required" class="error">
+      Name is required!
+    </p>
+    <p *ngIf="form.get('name').touched && form.get('name').errors?.minlength" class="error">
+      Name must be at least 5 characters!
+    </p>
+    <p class="field">
+      <label for="name"><span><i class="fas fa-user"></i></span></label>
+      <input [class.input-error]="form.get('name').touched && !!form.get('name').errors" type="text"
+        name="name" id="name" placeholder="Band's name" formControlName="name">
+    </p>
+    
+    <!-- password -->
+    <p *ngIf="form.get('password').touched && form.get('password').errors?.required" class="error">
+      Password is required!
+    </p>
+    <p *ngIf="form.get('password').touched && form.get('password').errors?.minlength" class="error">
+      Password must be at least 4 characters!
+    </p>
+    <p class="field">
+      <label for="password"><span><i class="fas fa-lock"></i></span></label>
+      <input [class.input-error]="form.get('password').touched && !!form.get('password').errors" type="password"
+        name="password" id="password" placeholder="Password" formControlName="password">
+    </p>
+    
+    <!-- rePassword -->
+    <p *ngIf="form.get('rePassword').touched && form.get('rePassword').errors?.required" class="error">
+      Repeat Password is required!</p>
+    <p *ngIf="form.get('rePassword').touched && form.get('rePassword').errors?.rePasswordValidator" class="error">Repeat
+      Password does not match password!</p>
+    <p class="field">
+      <label for="rePassword"><span><i class="fas fa-lock"></i></span></label>
+      <input [class.input-error]="form.get('rePassword').touched && !!form.get('rePassword').errors" type="password"
+        name="rePassword" id="rePassword" placeholder="Repeat Password" formControlName="rePassword">
+    </p>
+
+    <!-- imgUrl -->
+    <p *ngIf="form.get('imgUrl').touched && form.get('imgUrl').errors?.required" class="error">Img Url is required</p>
+    <p class="field">
+      <label for="imgUrl"><span><i class="fas fa-image"></i></span></label>
+      <input [class.input-error]="form.get('imgUrl').touched && !!form.get('imgUrl').errors" type="text"
+        name="imgUrl" id="imgUrl" placeholder="An image of your band" formControlName="imgUrl">
+    </p>  
+
+    <!-- genre -->
+    <p *ngIf="form.get('genre').touched && form.get('genre').errors?.required" class="error">Genre is required!</p>
+    <p class="field field-icon">
+      <label for="genre"><span><i class="fas fa-music"></i></span></label>
+      <input [class.input-error]="form.get('genre').touched && !!form.get('genre').errors" type="text"
+        name="genre" id="genre" placeholder="What genre do you play" formControlName="genre">
+    </p>
+    
+    <p *ngIf="this.errorMessage" class="error">
+      {{this.errorMessage}}
+    </p>
+
+    <button [disabled]="isLoading || form.invalid">Register</button>
+
+    <p>Already have an account?  <a routerLink="/user/login">Log In here</a></p>
+  </form>
+</div>

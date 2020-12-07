@@ -1,0 +1,8 @@
+<div class="bands-page">
+  <h2>All bands</h2>
+  <div class="bands" *ngIf="bandList">
+    <app-band-list-item *ngFor="let band of bandList" [band]="band"></app-band-list-item>
+    <div *ngIf="bandList.length === 0">There are currently no registered bands :(</div>
+  </div>
+  <div *ngIf="!bandList"><p>Loading...</p></div>
+</div>

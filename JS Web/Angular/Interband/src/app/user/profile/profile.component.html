@@ -1,0 +1,68 @@
+<ng-template #defaultMode>
+  <img class="item" src="{{currentUser.imgUrl}}" alt="user image">
+  <p class="item">Name: {{currentUser.name}}</p>
+  <p class="item">Genre: {{currentUser.genre}}</p>
+  <p class="item">Email: {{currentUser.email}}</p>
+  <p class="item">Joined: <time>{{currentUser.created_at.slice(0, 10)}}</time></p>
+  
+  <button class="edit-button" (click)="toggleEditMode()">Edit</button>
+</ng-template>
+
+<ng-template #editMode>
+  <form id="edit-form" [formGroup]="form" class="register" (ngSubmit)="submitHandler()">
+
+    <!-- email -->
+    <p *ngIf="form.get('email').touched && form.get('email').errors?.required" class="error">
+      Email is required!
+    </p>
+    <p *ngIf="form.get('email').touched && form.get('email').errors?.emailValidator" class="error">
+      Email is not valid!
+    </p>
+    <p class="flex">
+      <label for="email">Email: </label>
+      <input [class.input-error]="form.get('email').touched && !!form.get('email').errors" type="email" name="email"
+        id="email"  formControlName="email" [ngModel]="currentUser.email">
+    </p> 
+
+    <!-- username -->
+    <p *ngIf="form.get('name').touched && form.get('name').errors?.required" class="error">
+      Name is required!
+    </p>
+    <p *ngIf="form.get('name').touched && form.get('name').errors?.minlength" class="error">
+      Name must be at least 5 characters!
+    </p>
+    <p class="flex">
+      <label for="name">Name: </label>
+      <input [class.input-error]="form.get('name').touched && !!form.get('name').errors" type="text"
+        name="name" id="name"  formControlName="name" [ngModel]="currentUser.name">
+    </p>
+
+    <!-- imgUrl -->
+    <p *ngIf="form.get('imgUrl').touched && form.get('imgUrl').errors?.required" class="error">Img Url is required</p>
+    <p class="flex">
+      <label for="imgUrl">Image Url: </label>
+      <input [class.input-error]="form.get('imgUrl').touched && !!form.get('imgUrl').errors" type="text"
+        name="imgUrl" id="imgUrl"  formControlName="imgUrl" [ngModel]="currentUser.imgUrl">
+    </p>
+    
+    <!-- genre -->
+    <p *ngIf="form.get('genre').touched && form.get('genre').errors?.required" class="error">Genre is required!</p>
+    <p class="flex">
+      <label for="genre">Genre: </label>
+      <input [class.input-error]="form.get('genre').touched && !!form.get('genre').errors" type="text"
+        name="genre" id="genre"  formControlName="genre" [ngModel]="currentUser.genre">
+    </p>
+    
+    <p *ngIf="this.errorMessage" class="error">
+      {{this.errorMessage}}
+    </p>
+
+    <button [disabled]="form.invalid || isLoading" class="green-button">Save</button><br>
+    <button type="button" class="red-button" (click)="toggleEditMode()">Cancel</button>
+  </form>
+</ng-template>
+
+<div class="profile-page">
+  <h2>Your Profile :)</h2>
+  <ng-container *ngTemplateOutlet="inEditMode ? editMode : defaultMode"></ng-container>
+</div>

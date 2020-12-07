@@ -1,0 +1,13 @@
+.not-found-page {
+  background: rgba(0, 0, 0, 0.25) url(../../../assets/media/not-found.jpg) no-repeat center;
+  background-blend-mode: darken;
+  background-size: cover;
+  max-width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  height: calc(100vh - 7rem);
+}
+
+.not-found-page h1 {
+  padding-top: 17rem;
+  font-size: 3rem;
+}

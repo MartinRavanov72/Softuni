@@ -1,0 +1,37 @@
+<header>
+    <div class="logo-container">
+      <p class="logo" routerLink="/home">Interband</p>
+    </div>
+    <nav class="nav">
+      <ul>
+        <div class="left">
+          <li>
+            <a routerLink="/home"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a routerLink="/band"><i class="fas fa-music"></i>Bands</a>
+          </li>
+          <li *ngIf="isLogged">
+            <a routerLink="/post"><i class="fas fa-paste"></i>Posts</a>
+          </li>
+          <li *ngIf="isLogged">
+            <a routerLink="/post/new"><i class="fas fa-pen"></i>New Post</a>
+          </li>
+        </div>
+        <div class="right">
+          <li *ngIf="isLogged">
+            <a routerLink="/user/profile"><i class="far fa-user"></i>Your profile</a>
+          </li>
+          <li *ngIf="isLogged">
+            <a (click)="logoutHandler()"><i class="fas fa-sign-out-alt"></i>Logout</a>
+          </li>
+          <li *ngIf="!isLogged">
+            <a routerLink="/user/login"><i class="fas fa-sign-in-alt"></i>Login</a>
+          </li>
+          <li *ngIf="!isLogged">
+            <a routerLink="/user/register"><i class="far fa-user"></i>Register</a>
+          </li>
+        </div>       
+      </ul>
+    </nav>
+</header>

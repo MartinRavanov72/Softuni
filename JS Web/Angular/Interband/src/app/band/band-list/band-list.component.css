@@ -1,0 +1,15 @@
+.bands-page{
+    text-align: center;
+}
+
+.bands{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+h2{
+    padding-bottom: 0;
+}

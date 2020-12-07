@@ -1,0 +1,17 @@
+<div class="band-detail-page" *ngIf="band">  
+  <h2>{{band.name}}'s profile: </h2>
+  
+  <img class="info" src="{{band.imgUrl}}" alt="band image">
+  <p class="info">Name: {{band.name}}</p>
+  <p class="info">Genre: {{band.genre}}</p>
+  <p class="info">Email: {{band.email}}</p>
+  <p class="info">Joined: <time>{{band.created_at.slice(0, 10)}}</time></p>
+
+  <div *ngIf="band.posts" >
+    <p *ngIf="band.posts.length !== 0">All their posts:</p>
+    <div *ngFor="let post of band.posts" class="post">
+      <p class="post-content">{{post.text}}</p>
+    </div>
+   </div>
+   <div *ngIf="band.posts.length === 0">They haven't posted anything yet...</div>
+</div>

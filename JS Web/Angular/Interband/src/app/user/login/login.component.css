@@ -1,0 +1,58 @@
+.login-page {
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  color: #333;
+}
+
+h2{
+  padding-bottom: 2rem;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(14, 83, 122);
+}
+
+input {
+  color: #333;
+  border: 1px solid rgb(64, 152, 202);
+  border-radius: 0.3rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  padding: 0.3rem 0 0.3rem 0.5rem;
+  background: rgb(240, 255, 244);
+}
+
+.field {
+  display: flex;
+}
+
+button {
+  max-width: 15rem;
+  padding: 0.5rem 3.5rem;
+  border-radius: 2rem;
+  background-color: rgb(25, 107, 0);
+  color: white;
+  margin: 0.5rem 0;
+}
+
+button:disabled,
+button[disabled] {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+i {
+  padding-right: 0.3rem;
+  position: relative;
+  top: 6px;
+}
+
+p.error {
+  color: red;
+}

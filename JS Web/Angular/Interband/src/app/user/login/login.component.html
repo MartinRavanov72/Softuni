@@ -1,0 +1,39 @@
+<div class="login-page">
+  <form [formGroup]="form" (ngSubmit)="submitFormHandler()">
+    <h2>Login</h2>
+
+    <!-- email -->
+    <p *ngIf="form.get('email').touched && form.get('email').errors?.required" class="error">
+      Email is required!
+    </p>
+    <p *ngIf="form.get('email').touched && form.get('email').errors?.emailValidator" class="error">
+      Email is not valid!
+    </p>
+    <p class="field">
+      <label for="email"><span><i class="fas fa-envelope"></i></span></label>
+      <input [class.input-error]="form.get('email').touched && !!form.get('email').errors" type="email" name="email"
+        id="email" placeholder="Email" formControlName="email">
+    </p>
+
+    <!-- password -->
+    <p *ngIf="form.get('password').touched && form.get('password').errors?.required" class="error">
+      Password is required!
+    </p>
+    <p *ngIf="form.get('password').touched && form.get('password').errors?.minlength" class="error">
+      Password must be at least 4 characters!
+    </p>
+    <p class="field">
+      <label for="password"><span><i class="fas fa-lock"></i></span></label>
+      <input [class.input-error]="form.get('password').touched && !!form.get('password').errors" type="password"
+        name="password" id="password" placeholder="Password" formControlName="password">
+    </p>
+    
+    <p *ngIf="this.errorMessage" class="error">
+      {{this.errorMessage}}
+    </p>
+
+    <button [disabled]="isLoading || form.invalid">Login</button>
+    
+    <p>Don't have an account?  <a routerLink="/user/register">Register here</a></p>
+</form>
+</div>
