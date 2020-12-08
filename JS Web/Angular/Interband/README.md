@@ -14,9 +14,11 @@
 -All bands (available for both logged in and not logged in users) (dynamic)
 
 
+
 -Login (available for not logged in users only)
 
 -Register (available for not logged in users only)
+
 
 
 -All posts (available for logged in users only) (dynamic)
@@ -26,6 +28,7 @@
 -Your profile (available for logged in users only) (dynamic)
 
 -Band detail (available for logged in users only) (dynamic)
+
 
 
 -404 (available for both logged in and not logged in users)
