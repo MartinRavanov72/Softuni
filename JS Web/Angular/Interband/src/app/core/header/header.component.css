@@ -17,6 +17,10 @@ header{
     font-size: 1.5rem;
 }
 
+a{
+  cursor: pointer;
+}
+
 .logo:hover{
     color: white;
 }
@@ -56,5 +60,104 @@ a:hover{
 
 i{
     padding-right: 0.3rem;
+}
+
+.nav-toggle {
+  background: rgb(64, 152, 202);
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+
+@media (max-width: 1279px) {
+  a {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 1023px) {
+    .nav-toggle:checked ~* ul {
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .nav-toggle:checked~* .left,
+    .nav-toggle:checked~* .right {
+      display: block;
+    }
+
+    .nav-toggle:checked~* .right {
+      padding-right: 4rem;
+    }
+
+    .nav ul .right {
+      display: none;
+    }
+
+    .nav ul {
+      display: none;
+    }
+
+    .nav .left {
+      display: none;
+    }
+
+    .nav-toggle:checked~ header {
+      margin-bottom: 12rem;
+    }
+
+    header {
+      justify-content: center;
+    }
+
+    .nav-toggle:checked~* .nav a,
+    .nav-toggle:checked~* .nav i {
+      background: transparent;
+      color: #333;
+      z-index: 123;
+    }
+
+    .nav-toggle:checked~* a:hover {
+      background:transparent;
+      color: inherit;
+    }
+
+    .logo-container {
+      display: none;
+    }
+
+    .nav-toggle:checked~* .fa-times {
+      display: block;
+    }
+
+    .nav-toggle:checked~* .fa-bars {
+      display: none;
+    }
+
+    .fa-bars {
+      display: block;
+    }
+
+    .fa-times {
+      display: none;
+    }
+
+    .nav-toggle-label {
+      display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-toggle-label {
+        display: none;
+    }
+
+    .fa-bars {
+      display: none;
+    }
+
+    .fa-times {
+      display: none;
+    }
 }
 

@@ -7,8 +7,31 @@ p, img{
 }
 
 .post {
-  max-width: 30%;
   margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .post {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 800px) {
+  .post {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .post {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .post {
+    max-width: 50%;
+  }
 }
 
 .post-content {

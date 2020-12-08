@@ -7,6 +7,6 @@
     height: calc(100vh - 7rem);
 }
 
-.home-page h1{
-    padding-top: 17rem;
+.home-page h1 {
+  padding-top: calc(50vh - 7.7rem);
 }

@@ -1,7 +1,6 @@
 .profile-page {
   text-align: center;
   margin: 0 auto;
-  width: 90%;
   color: #333;
 }
 
@@ -15,6 +14,10 @@
     background-color: rgb(64, 152, 202);
 }
 
+.edit-button:hover {
+  background: rgb(14, 83, 122);
+}
+
 .green-button{
     border: 0;
     width: 10rem;
@@ -25,6 +28,10 @@
     background-color: rgb(25, 107, 0);
 }
 
+.green-button:hover {
+  background: rgb(19, 83, 0);
+}
+
 .red-button{ 
     border: 0;
     width: 10rem;
@@ -33,6 +40,10 @@
     color: white;
     margin: 0.5rem 0;
     background: rgb(119, 0, 0);
+}
+
+.red-button:hover {
+  background: rgb(167, 0, 0);
 }
 
 button:disabled,
@@ -51,10 +62,41 @@ img {
 
 #edit-form{
     text-align: center;
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     color: #333;
-}  
+} 
+
+@media (max-width: 800px) {
+  #edit-form {
+    width: 85%;
+  }
+}
+
+@media (min-width: 800px) {
+  #edit-form {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #edit-form {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1280px) {
+  #edit-form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 799px) {
+  #edit-form label {
+    position: inherit;
+    display: block;
+  }
+}
 
 #edit-form label{
     position: relative;

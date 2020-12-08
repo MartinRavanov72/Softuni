@@ -1,8 +1,32 @@
 .login-page {
   text-align: center;
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
   color: #333;
+}
+
+@media (max-width: 800px) {
+  .login-page {
+    width: 85%;
+  }
+}
+
+@media (min-width: 800px) {
+  .login-page {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .login-page {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .login-page {
+    width: 40%;
+  }
 }
 
 h2{
@@ -35,6 +59,10 @@ button {
   background-color: rgb(25, 107, 0);
   color: white;
   margin: 0.5rem 0;
+}
+
+button:hover{
+  background: rgb(19, 83, 0);
 }
 
 button:disabled,

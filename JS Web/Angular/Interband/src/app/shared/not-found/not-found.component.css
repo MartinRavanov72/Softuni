@@ -8,6 +8,6 @@
 }
 
 .not-found-page h1 {
-  padding-top: 17rem;
+  padding-top: calc(50vh - 7.7rem);
   font-size: 3rem;
 }

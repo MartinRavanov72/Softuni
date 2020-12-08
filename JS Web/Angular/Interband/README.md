@@ -1,27 +1,23 @@
 # Interband
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+## Instructions
 
-## Development server
+1. Download and type in the console: 'npm i'
+2. Run it by typing in the console: 'npm start'
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Information
 
-## Code scaffolding
+### Pages:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+-Home (available for both logged in and not logged in users)
+-All bands (available for both logged in and not logged in users) (dynamic)
 
-## Build
+-Login (available for not logged in users only)
+-Register (available for not logged in users only)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+-All posts (available for logged in users only) (dynamic)
+-New post (available for logged in users only)  
+-Your profile (available for logged in users only) (dynamic)
+-Band detail (available for logged in users only) (dynamic)
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+-404 (available for both logged in and not logged in users)

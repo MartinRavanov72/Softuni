@@ -5,6 +5,7 @@
     padding: 1rem;
     color: rgba(255, 255, 255, 0.801);
     background: rgb(55, 55, 55);
+    box-shadow: 3px 3px #000000;
 }
 
 .text{

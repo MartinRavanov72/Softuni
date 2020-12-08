@@ -9,6 +9,14 @@
     color: #333;
     margin: 2rem;
     background: rgb(126, 15, 15);
+    box-shadow: 3px 3px #888888;
+}
+
+@media (max-width: 1023px) {
+  .band {
+    display: block;
+    min-width: 10rem;
+  }
 }
 
 .band-info{
