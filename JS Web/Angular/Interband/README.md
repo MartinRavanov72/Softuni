@@ -3,7 +3,7 @@
 ## Instructions
 
 1. Download and type in the console: 'npm i'
-2. Run it by typing in the console: 'npm start'
+2. Run it by typing in the console: 'ng serve'
 
 ## Information
 
