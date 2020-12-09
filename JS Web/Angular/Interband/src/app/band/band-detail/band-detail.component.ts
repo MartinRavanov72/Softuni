@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { IUser } from 'src/app/shared/interfaces';
+import { UserService } from 'src/app/user/user.service';
 import { BandService } from '../band.service';
 
 @Component({
@@ -15,13 +16,19 @@ export class BandDetailComponent implements OnInit {
 
   constructor(
     bandService: BandService,
-    activatedRoute: ActivatedRoute
+    userService: UserService,
+    activatedRoute: ActivatedRoute,
+    router: Router
   ) {
     const id = activatedRoute.snapshot.params.id;
 
-    bandService.loadBand(id).subscribe(band => {
-      this.band = band;
-    });
+    if (id == userService.currentUser._id) {
+      router.navigate(["/user/profile"]);
+    } else {
+      bandService.loadBand(id).subscribe(band => {
+        this.band = band;
+      });
+    }
   }
 
   ngOnInit(): void {

@@ -9,7 +9,6 @@ import { CoreModule } from './core/core.module';
 import { HomeComponent } from './home/home.component';
 import { UserModule } from './user/user.module';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
 import { NotFoundComponent } from './shared/not-found/not-found.component';
 import { PostModule } from './post/post.module';
 import { BandModule } from './band/band.module';

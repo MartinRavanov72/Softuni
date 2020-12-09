@@ -90,13 +90,14 @@ function getUser(req, res, next) {
     const { userId } = req.params;
    
     userModel.findById(userId)
-        .populate('posts')
+        .populate({ path: 'posts', options: { sort: { 'created_at': -1 } } })
         .then(user => res.status(200).json(user))
         .catch(next);
 }
 
 function getUsers(req, res, next) {
     userModel.find()
+        .sort({ created_at: -1 })
         .populate('posts')
         .then(user => res.status(200).json(user))
         .catch(next);

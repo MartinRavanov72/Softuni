@@ -10,7 +10,12 @@
   <div *ngIf="band.posts" >
     <p *ngIf="band.posts.length !== 0">All their posts:</p>
     <div *ngFor="let post of band.posts" class="post">
-      <p class="post-content">{{post.text}}</p>
+      <div class="post-info">
+        <img class="post-img" src="{{band.imgUrl}}" alt="band image">
+        <span >{{band.name}}</span>
+        <span> <i class="fas fa-circle"></i><time>{{post.created_at.slice(0, 10)}}</time></span>
+      </div>
+      <p class="text">{{post.text}}</p>
     </div>
    </div>
    <div *ngIf="band.posts.length === 0">They haven't posted anything yet...</div>
