@@ -10,3 +10,7 @@
 2 models: User and Post and their controllers, routers and additional utils
 
 Keeping track of the logged in user by using jwt and cookies.
+
+Port is 3000
+
+Validation of all data
