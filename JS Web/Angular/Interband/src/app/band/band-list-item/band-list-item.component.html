@@ -2,9 +2,9 @@
   <img [routerLink]="['/band/', band._id]" src="{{band.imgUrl}}" alt="band image">
   <div class="band-info">
     <a [routerLink]="['/band/', band._id]">
-      <h2>{{band.name}}</h2>
+      <h2>{{band.name | showLessText}}</h2>
     </a>
-    <p>Genre: {{band.genre}}</p>
-    <p>Joined: <time>{{band.created_at.slice(0, 10)}}</time></p>
+    <p>Genre: {{band.genre | showLessText}}</p>
+    <p>Joined: <time>{{band.created_at | timePassed}}</time></p>
   </div>
 </div>

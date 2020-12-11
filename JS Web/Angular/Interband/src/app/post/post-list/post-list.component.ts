@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IPost } from 'src/app/shared/interfaces';
 import { PostService } from '../post.service';
 

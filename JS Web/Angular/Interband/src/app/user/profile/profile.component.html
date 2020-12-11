@@ -3,7 +3,7 @@
   <p class="item">Name: {{currentUser.name}}</p>
   <p class="item">Genre: {{currentUser.genre}}</p>
   <p class="item">Email: {{currentUser.email}}</p>
-  <p class="item">Joined: <time>{{currentUser.created_at.slice(0, 10)}}</time></p>
+  <p class="item">Joined: <time>{{currentUser.created_at | timePassed}}</time></p>
   
   <button class="edit-button" (click)="toggleEditMode()">Edit</button>
 </ng-template>

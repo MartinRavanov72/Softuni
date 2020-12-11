@@ -1,7 +1,7 @@
 .posts-page{
-    padding-bottom: 2rem;
-    max-width: 50%;
-    margin: 0 auto;
+  padding-bottom: 2rem;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 @media (max-width: 800px) {
@@ -29,5 +29,5 @@
 }
 
 h2{
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }

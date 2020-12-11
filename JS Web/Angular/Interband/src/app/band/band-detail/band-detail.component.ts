@@ -13,6 +13,7 @@ import { BandService } from '../band.service';
 export class BandDetailComponent implements OnInit {
 
   band: IUser = null;
+  isCurrentUser = false;
 
   constructor(
     bandService: BandService,
@@ -23,12 +24,12 @@ export class BandDetailComponent implements OnInit {
     const id = activatedRoute.snapshot.params.id;
 
     if (id == userService.currentUser._id) {
-      router.navigate(["/user/profile"]);
-    } else {
-      bandService.loadBand(id).subscribe(band => {
-        this.band = band;
-      });
+      this.isCurrentUser = true;
     }
+
+    bandService.loadBand(id).subscribe(band => {
+      this.band = band;
+    });
   }
 
   ngOnInit(): void {

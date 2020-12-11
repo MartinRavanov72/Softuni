@@ -5,13 +5,13 @@
 }
 
 .edit-button{
-    border: 0;
-    width: 10rem;
-    padding: 0.5rem 3.5rem;
-    border-radius: 2rem;
-    color: white;
-    margin: 0.5rem 0;
-    background-color: rgb(64, 152, 202);
+  border: 0;
+  width: 10rem;
+  padding: 0.5rem 3.5rem;
+  border-radius: 2rem;
+  color: white;
+  margin: 0.5rem 0;
+  background-color: rgb(64, 152, 202);
 }
 
 .edit-button:hover {
@@ -19,13 +19,13 @@
 }
 
 .green-button{
-    border: 0;
-    width: 10rem;
-    padding: 0.5rem 3.5rem;
-    border-radius: 2rem;
-    color: white;
-    margin: 0.5rem 0;
-    background-color: rgb(25, 107, 0);
+  border: 0;
+  width: 10rem;
+  padding: 0.5rem 3.5rem;
+  border-radius: 2rem;
+  color: white;
+  margin: 0.5rem 0;
+  background-color: rgb(25, 107, 0);
 }
 
 .green-button:hover {
@@ -33,13 +33,13 @@
 }
 
 .red-button{ 
-    border: 0;
-    width: 10rem;
-    padding: 0.5rem 3.5rem;
-    border-radius: 2rem;
-    color: white;
-    margin: 0.5rem 0;
-    background: rgb(119, 0, 0);
+  border: 0;
+  width: 10rem;
+  padding: 0.5rem 3.5rem;
+  border-radius: 2rem;
+  color: white;
+  margin: 0.5rem 0;
+  background: rgb(119, 0, 0);
 }
 
 .red-button:hover {
@@ -61,10 +61,10 @@ img {
 }
 
 #edit-form{
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
-    color: #333;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  color: #333;
 } 
 
 @media (max-width: 800px) {
@@ -99,10 +99,10 @@ img {
 }
 
 #edit-form label{
-    position: relative;
-    top: 5px;
-    padding-right: 0.5rem;
-    min-width: 6rem;
+  position: relative;
+  top: 5px;
+  padding-right: 0.5rem;
+  min-width: 6rem;
 }
 
 h2 {
@@ -124,9 +124,9 @@ input {
 }
 
 .flex{
-    display: flex;
+  display: flex;
 }
 
 .error{
-    color: red;
+  color: red;
 }

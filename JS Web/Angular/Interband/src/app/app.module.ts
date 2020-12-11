@@ -17,7 +17,7 @@ import { BandModule } from './band/band.module';
   declarations: [
     AppComponent,
     HomeComponent,
-    NotFoundComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

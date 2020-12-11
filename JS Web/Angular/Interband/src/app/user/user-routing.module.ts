@@ -14,7 +14,6 @@ const routes: Routes = [
         component: RegisterComponent,
         data: {
           isLogged: false,
-          noNavigation: true,
           title: 'Register'
         },
       },
@@ -34,7 +33,6 @@ const routes: Routes = [
           title: 'Your Profile'
         }
       }
-     
     ]
   }
 ];

@@ -2,6 +2,7 @@ import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
 
 export function emailValidator(control: AbstractControl): ValidationErrors | null {
   const value = (control.value as string);
+  
   if (!value) {
     return null;
   }

@@ -1,8 +1,8 @@
 .register-page{
-    text-align: center;
-    width: 40%;
-    margin: 0 auto;
-    color: #333;
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  color: #333;
 }
 
 @media (max-width: 800px) {
@@ -34,8 +34,8 @@ h2 {
 }
 
 input:focus{
-    outline: none;
-    border-bottom: 2px solid rgb(14, 83, 122);
+  outline: none;
+  border-bottom: 2px solid rgb(14, 83, 122);
 }
 
 input{
@@ -49,7 +49,7 @@ input{
 }
 
 .field{
-    display: flex;
+  display: flex;
 }
 
 button{

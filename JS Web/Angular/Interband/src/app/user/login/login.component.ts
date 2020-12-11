@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit {
     private userService: UserService,
     private router: Router
   ) { 
+    
     const passwordControl = this.fb.control('', [Validators.required, Validators.minLength(4)]);
     this.form = this.fb.group({
       email: ['', [Validators.required, emailValidator]],

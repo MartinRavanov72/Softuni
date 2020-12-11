@@ -1,22 +1,25 @@
 <div class="band-detail-page" *ngIf="band">  
-  <h2>{{band.name}}'s profile: </h2>
+  <h2 *ngIf="!isCurrentUser">{{band.name}}'s profile: </h2>
+  <h2 *ngIf="isCurrentUser">{{band.name}}'s profile (Your profile): </h2>
   
   <img class="info" src="{{band.imgUrl}}" alt="band image">
   <p class="info">Name: {{band.name}}</p>
   <p class="info">Genre: {{band.genre}}</p>
   <p class="info">Email: {{band.email}}</p>
-  <p class="info">Joined: <time>{{band.created_at.slice(0, 10)}}</time></p>
+  <p class="info">Joined: <time>{{band.created_at | timePassed }}</time></p>
 
   <div *ngIf="band.posts" >
-    <p *ngIf="band.posts.length !== 0">All their posts:</p>
+    <p *ngIf="band.posts.length !== 0 && !isCurrentUser">All their posts:</p>
+    <p *ngIf="band.posts.length !== 0 && isCurrentUser">All your posts:</p>
     <div *ngFor="let post of band.posts" class="post">
       <div class="post-info">
         <img class="post-img" src="{{band.imgUrl}}" alt="band image">
         <span >{{band.name}}</span>
-        <span> <i class="fas fa-circle"></i><time>{{post.created_at.slice(0, 10)}}</time></span>
+        <span> <i class="fas fa-circle"></i><time>{{post.created_at | timePassed}}</time></span>
       </div>
       <p class="text">{{post.text}}</p>
     </div>
    </div>
-   <div *ngIf="band.posts.length === 0">They haven't posted anything yet...</div>
+   <div *ngIf="band.posts.length === 0 && !isCurrentUser">They haven't posted anything yet...</div>
+   <div *ngIf="band.posts.length === 0 && isCurrentUser">You haven't posted anything yet...</div>
 </div>
