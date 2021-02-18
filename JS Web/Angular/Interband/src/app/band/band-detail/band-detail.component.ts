@@ -23,7 +23,7 @@ export class BandDetailComponent implements OnInit {
   ) {
     const id = activatedRoute.snapshot.params.id;
 
-    if (id == userService.currentUser._id) {
+    if (id == userService.currentUser.id) {
       this.isCurrentUser = true;
     }
 

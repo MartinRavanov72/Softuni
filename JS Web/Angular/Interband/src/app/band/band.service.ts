@@ -16,6 +16,6 @@ export class BandService {
   }
 
   loadBand(id: string): Observable<IUser> {
-    return this.http.get<IUser>(`${apiUrl}/users/${id}`, { withCredentials: true });
+    return this.http.get<IUser>(`${apiUrl}/user/${id}`, { withCredentials: true });
   }
 }

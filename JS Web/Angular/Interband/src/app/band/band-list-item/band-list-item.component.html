@@ -1,7 +1,7 @@
 <div class="band">
-  <img [routerLink]="['/band/', band._id]" src="{{band.imgUrl}}" alt="band image">
+  <img [routerLink]="['/band/', band.id]" src="{{band.imgUrl}}" alt="band image">
   <div class="band-info">
-    <a [routerLink]="['/band/', band._id]">
+    <a [routerLink]="['/band/', band.id]">
       <h2>{{band.name | showLessText}}</h2>
     </a>
     <p>Genre: {{band.genre | showLessText}}</p>

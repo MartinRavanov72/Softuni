@@ -1,7 +1,7 @@
 <div class="post">
   <div class="info">
-    <img routerLink="/band/{{post.userId._id}}" src="{{post.userId.imgUrl}}" alt="band image">
-    <span routerLink="/band/{{post.userId._id}}">{{post.userId.name}}</span>
+    <img routerLink="/band/{{post.userId.id}}" src="{{post.userId.imgUrl}}" alt="band image">
+    <span routerLink="/band/{{post.userId.id}}">{{post.userId.name}}</span>
     <span> <i class="fas fa-circle"></i><time>{{post.created_at | timePassed}}</time></span>
   </div>
   <p class="text">{{post.text}}</p>
